@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700,900&display=swap');
+*{
+	padding: 0px;
+	margin: 0px;
+}
+body{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	line-height: 24px;
+}
+h1,h2,h3,h4,h5,h6{
+	font-family: 'Lato', sans-serif;
+}
+a{
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+}
+a:hover{
+	text-decoration: none;
+}
+.header-section{
+	width: 100%;
+	background: url(../img/banner.png) center top no-repeat;
+	background-size: cover;
+	position: relative;
+}
+.header-section .bg-light {
+    background-color: transparent !important;
+}
+.header-section .navbar-light .navbar-nav .nav-link {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    margin: 0px 13px 0px 12px;
+}
+.header-section .navbar-light .navbar-nav .active>.nav-link{
+	color: #fff;
+}
+.banner{
+	width: 100%;
+	padding: 150px 0px;
+	position: relative;
+}
+.inner-banner{
+	width: 100%;
+	padding: 150px 0px 150px 45px;
+}
+.inner-banner .sub-title{
+    color: #fff;
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 25px;
+}
+.inner-banner .btn-info {
+    background: #ff690f;
+    border: 1px solid #ff690f;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 2px;
+    transition: .9s linear;
+}
+.inner-banner .btn-info:hover{
+	background: transparent;
+    border: 1px solid #ff690f;
+    color: #ff690f;
+}
+
+.we-offer{
+	width: 100%;
+	padding: 80px 0px;
+	background: #f7f7f7;
+}
+.offer-title{
+	width: 100%;
+	text-align: center;
+}
+
+.offer-title h1{
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.offer-title p{
+    font-size: 16px;
+    line-height: 26px;
+    font-weight: 300;
+    color: #525252;
+}
+
+.inner-service{
+	width: 100%;
+	padding: 35px 0px;
+	text-align: center;
+}
+.inner-service img{
+	width: 185px;
+	height: 185px;
+}
+.inner-content{
+	width: 100%;
+	padding: 25px 0px;
+}
+
+.inner-content h5{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 20px;
+	color: #525252;
+
+}
+.inner-content h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 25px;
+	font-family: Myriad Pro;
+}
+.inner-content .btn-info {
+    background: #ff690f;
+    border: 1px solid #ff690f;
+    padding: 8px 25px;
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-radius: 5px;
+    transition: .9s linear;
+}
+.inner-content .btn-info:hover{
+	background: transparent;
+    border: 1px solid #ff690f;
+    color: #ff690f;
+}
+
+
+.portfolio{
+	width: 100%;
+	padding: 0px 0px 40px 0px;
+	overflow: hidden;
+}
+.portfolio-item {
+  overflow: hidden;
+}
+.portfolio-item-image {
+  width: 100%;
+  display: block;
+  height: auto;
+}
+
+.overlay{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 0;
+	background: rgb(0,0,0, .8);
+	opacity: 0;
+	transition: .6s linear;
+}
+.portfolio-item:hover .overlay{
+	opacity: 1;
+	height: 100%;
+}
+.overlay a{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+.overlay a i{
+	color: #fff;
+	transition: .6s linear;
+}
+.overlay a i:hover{
+	font-size: 45px;
+}
+
+
+
+.meet-crew{
+	width: 100%;
+	padding: 80px 0px;
+	background: #f7f7f7;
+}
+.meet-title{
+	width: 100%;
+	text-align: center;
+}
+
+.meet-title h1{
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 20px;
+}
+
+.meet-inner{
+	width: 100%;
+	padding: 35px 0px;
+	text-align: center;
+}
+.meet-inner img{
+	width: 60%;
+}
+.meet-content{
+	width: 100%;
+	padding: 25px 0px;
+}
+
+.meet-content h5{
+	font-size: 16px;
+	text-transform: uppercase;
+	font-weight: 300;
+	line-height: 20px;
+	color: #525252;
+
+}
+.meet-content h3{
+	font-size: 22px;
+	text-transform: uppercase;
+	font-weight: 700;
+	line-height: 30px;
+	margin-bottom: 25px;
+	font-family: Myriad Pro;
+}
+
+
+/*****************************************
+	**about-us Section code goes here...
+******************************************/
+.about-us{
+	width: 100%;
+	padding: 160px 0px;
+	background: url(../img/bg.png) center top no-repeat;
+	background-size: cover;
+}
+.about-us .title{
+	width: 100%;
+}
+.about-us .title h2{
+	font-size: 44px;
+	font-weight: 700;
+	line-height: 60px;
+	margin-bottom: 20px;
+}
+.about-us .title p{
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 24px;
+	margin-bottom: 20px;
+	color: #272727;
+}
+.block{ 
+	width: 100%;
+	margin: 25px 0px;
+}
+.block p { 
+	margin: 0; 
+}
+.block p i{ 
+	font-size: 40px; 
+	color: #000000; 
+}
+.counter-wrapper{ 
+	color:#ff660d;
+	font-weight:700; 
+	font-size: 44px; 
+	line-height: 60px;
+	margin:5px 0px 15px 0px; 
+	text-transform: uppercase;
+}
+.text-block{ 
+	font-size: 16px; 
+	color: #272727;
+	font-weight: 500;
+	text-transform: uppercase;
+}
+
+/*****************************************
+	**Testimonials Section code goes here...
+******************************************/
+.testimonials{
+	width: 100%;
+	padding: 80px 0px;
+	background: #f7f7f7;
+}
+.testimonials-title{
+	width: 100%;
+	padding-bottom: 30px; 
+	text-align: center;
+}
+.testimonials-title h1{
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #000;
+	margin-bottom: 20px;
+}
+.testimonials .owl-carousel{
+	width: 100%;
+}
+.testimonials .owl-carousel .item{
+	width: 100%;
+	text-align: center;
+}
+.testimonials .owl-carousel .item img{
+	width: 150px;
+	margin: 0 auto;
+}
+.testimonials .owl-carousel .item h4{
+	font-size: 20px;
+	line-height: 30px;
+	font-weight: 700;
+	text-transform: uppercase;
+	margin: 15px 0px;
+}
+.testimonials .owl-carousel .item p{
+	font-size: 14px;
+	line-height: 24px;
+	font-weight: 400;
+
+}
+.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #ff630b;
+}
+/*****************************************
+	**Footer Section code goes here...
+******************************************/
+.no-padding{
+	padding: 0px !important;
+}
+.footer-section{
+	width: 100%;
+	background: #2f2f2f;
+}
+.main-footer{
+	padding: 40px 0px 40px 80px;
+	background: #2f2f2f;
+	color: #fff;
+}
+.main-footer h2{
+	text-transform: uppercase;
+	font-size: 44px;
+	line-height: 60px;
+	font-weight: 700;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.main-footer .media .fa{
+	color: #ff630b;
+	line-height: 26px;
+	padding-right: 10px;
+}
+.media-body p{
+	font-size: 14px;
+	line-height: 24px;
+}
+.social{
+	width: 100%;
+}
+.social ul{
+	margin-top: 20px;
+}
+.social ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0px 10px;
+}
+.social ul li a{
+	font-size: 22px;
+	line-height: 22px;
+	color: #979797;
+}
+.social ul li a:hover{
+	color: #ff630b;
+}
